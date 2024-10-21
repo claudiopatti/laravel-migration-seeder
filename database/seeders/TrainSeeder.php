@@ -30,7 +30,7 @@ class TrainSeeder extends Seeder
 
         for ($i=0; $i < 10; $i++) { 
             $train = new Train();
-            $train->agency = fake()->words(1, true);
+            $train->agency = fake()->company();
             $train->departure_station = fake()->city();
             $train->arrival_station = fake()->city();
             $train->departure_time = fake()->time();
